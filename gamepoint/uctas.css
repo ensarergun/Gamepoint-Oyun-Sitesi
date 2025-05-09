@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: black;
+    color: #0ff;
+}
+
+h1.game-title {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+    font-size: 22px;
+    margin-top: 60px;
+}
+
+hr {
+    width: 500px;
+    height: 2px;
+    background-color: #0ff;
+    box-shadow: 0 0 8px #0ff;
+    border: none;
+}
+
+.menu-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 8px 12px;
+    color: #0ff;
+    background-color: #000;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 10px #0ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.menu-button:hover {
+    background-color: #0ff;
+    color: #000;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 3px solid #0ff;
+    border-top: 3px solid #0ff;
+    box-shadow: inset 0 0 10px #0ff3;
+}
+
+.tile {
+    width: 148px;
+    height: 148px;
+    font-size: 120px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.tile.x {
+    color: #fff;
+    text-shadow: 0 0 3px #fff, 0 0 6px #aaa;
+}
+
+.tile.o {
+    color: #0f0;
+    text-shadow: 0 0 3px #0f0, 0 0 6px #080;
+}
+
+
+.winner {
+    background-color: #111;
+    color: #ff3860;
+    text-shadow: 0 0 6px #ff3860, 0 0 12px #ff3860;
+}
+
+
+.horizontal-line {
+    border-bottom: 3px solid #0ff;
+    box-shadow: 0 1px 3px #0ff;
+}
+
+.vertical-line {
+    border-right: 3px solid #0ff;
+    box-shadow: 1px 0 3px #0ff;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --highlight-color: #f0f0f0;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --highlight-color: #1e1e1e;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  

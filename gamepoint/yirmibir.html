@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yirmibir</title>
+        <button id="theme-toggle" aria-label="Tema Değiştir" class="theme-toggle">🌙</button>
+        <link rel="icon" href="icons/card-game.png" type="image/png">
+        <link rel="stylesheet" href="yirmibir.css">
+        <script src="yirmibir.js"></script>
+    </head>
+
+    <body>
+        <a href="menu.html" class="menu-button">⮌ Ana Menüye Dön</a>
+        <h2>Kurpiye: <span id="dealer-sum"></span></h2>
+        <div id="dealer-cards">
+            <img id="hidden" src="./cards/BACK.png">
+        </div>
+
+        <h2>Sen: <span id="your-sum"></span></h2>
+        <div id="your-cards"></div>
+
+        <br>
+        <button id="hit">Kart Çek</button>
+        <button id="stay">Kal</button>
+        <p id="results"></p>
+    </body>
+</html>
